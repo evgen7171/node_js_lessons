@@ -1,0 +1,84 @@
+{
+  "mail": {
+    "title": "Новости Mail.ru",
+    "category": {
+      "politic": {
+        "name": "политика",
+        "link": "https://news.mail.ru/politics/"
+      },
+      "economics": {
+        "name": "экономика",
+        "link": "https://news.mail.ru/economics/"
+      },
+      "society": {
+        "name": "общество",
+        "link": "https://news.mail.ru/society/"
+      },
+      "incidents": {
+        "name": "события",
+        "link": "https://news.mail.ru/incident/"
+      },
+      "sport": {
+        "name": "спорт",
+        "link": "https://sportmail.ru/"
+      }
+    },
+    "selector": "newsitem__title"
+  },
+  "yandex": {
+    "title": "Яндекс. Новости",
+    "category": {
+      "politic": {
+        "name": "политика",
+        "link": "https://yandex.ru/news/rubric/politics"
+      },
+      "society": {
+        "name": "общество",
+        "link": "https://yandex.ru/news/rubric/society"
+      },
+      "business": {
+        "name": "экономика",
+        "link": "https://yandex.ru/news/rubric/business"
+      },
+      "world": {
+        "name": "в мире",
+        "link": "https://yandex.ru/news/rubric/world"
+      },
+      "sport": {
+        "name": "спорт",
+        "link": "https://yandex.ru/sport?utm_source=yxnews&utm_medium=desktop"
+      }
+    },
+    "selector": "mg-card__"
+  },
+  "rambler": {
+    "title": "Рамблер / новости",
+    "category": {
+      "world": {
+        "name": "в мире",
+        "link": "https://news.rambler.ru/world/"
+      },
+      "moscow_city": {
+        "name": "новости Москвы",
+        "link": "https://news.rambler.ru/moscow_city/"
+      },
+      "politic": {
+        "name": "политика",
+        "link": "https://news.rambler.ru/politics/"
+      },
+      "community": {
+        "name": "общество",
+        "link": "https://news.rambler.ru/community/"
+      },
+      "incidents": {
+        "name": "происшествия",
+        "link": "https://news.rambler.ru/incidents/"
+      },
+      "tech": {
+        "name": "техника",
+        "link": "https://news.rambler.ru/tech/"
+      }
+    },
+    "selector": "top-card__title"
+  }
+}
