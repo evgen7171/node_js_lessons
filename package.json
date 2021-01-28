@@ -1,0 +1,23 @@
+{
+  "name": "node-js-4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tasks.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "restart": "npx nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.5",
+    "consolidate": "^0.16.0",
+    "express": "^4.17.1",
+    "handlebars": "^4.7.6",
+    "path": "^0.12.7",
+    "puppeteer": "^5.5.0",
+    "request": "^2.88.2"
+  }
+}
