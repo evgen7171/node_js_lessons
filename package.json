@@ -1,0 +1,23 @@
+{
+  "name": "node_js_lessons",
+  "version": "1.0.0",
+  "description": "Node.js lessons",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evgen7171/node_js_lessons.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/evgen7171/node_js_lessons/issues"
+  },
+  "homepage": "https://github.com/evgen7171/node_js_lessons#readme",
+  "dependencies": {
+    "mysql2": "^2.2.5"
+  }
+}
