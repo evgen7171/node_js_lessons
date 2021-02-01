@@ -1,8 +1,17 @@
+const query = require("./query");
+const {getPreparedFieldPropString} = require("./utils");
+const {prepareFields: prepareInsertFields} = require("./utils");
+const {options} = require("../../config");
+
+/**
+ * Операции над схемой/базой данных (SQL DDL)
+ * @returns {{drop: drop, addColumn: addColumn, removeColumn: removeColumn, create: ObjectConstructor.create}}
+ */
 function dbOperation() {
     const dbName = options.database;
     return {
         create: (tableName, fields, cb) => {
-            const string = prepareFields(fields);
+            const string = prepareInsertFields(fields);
             const sql = `CREATE TABLE \`${dbName}\`.\`${tableName}\` (${string});`;
             query(sql, [], cb);
         },

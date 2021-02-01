@@ -1,22 +1,26 @@
-
-
+const queryMaker = require('../service/queryMaker');
 
 const Tasks = {
     list: function (callback) {
-        // TODO
+        const sql = "SELECT * FROM tasks";
+        queryMaker(callback, sql)
     },
     add: function (task, callback) {
-        // TODO
+        const sql = `INSERT tasks(name) VALUES (?)`;
+        queryMaker(callback, sql, [task]);
     },
 
     change: function (id, text, callback) {
-        // TODO
+        const sql = `UPDATE tasks SET name = ? WHERE ID =  ?`;
+        queryMaker(callback, sql, [text, id]);
     },
     complete: function (id, callback) {
-        // TODO
+        const sql = `UPDATE tasks SET completed = true WHERE ID =  ?`;
+        queryMaker(callback, sql, [id]);
     },
     delete: function (id, callback) {
-        // TODO
+        const sql = `DELETE FROM tasks WHERE ID =  ?`;
+        queryMaker(callback, sql, [id]);
     }
 }
 

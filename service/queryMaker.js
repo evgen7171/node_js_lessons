@@ -1,12 +1,15 @@
 const mysql2 = require('mysql2');
-const options = require('./config').db;
+const options = require('../config').db;
 
-module.exports = function (sql) {
+module.exports = function (cb, sql, params = []) {
     const pool = mysql2.createPool(options).promise();
+    if(!cb){
+        cb = () => {}
+    }
 
-    pool.query(sql)
+    pool.query(sql,params)
         .then(([data, fields]) => {
-            console.log(data);
+            cb(data);
         })
         .catch((err) => {
             console.log(err);
